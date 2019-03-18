@@ -3,7 +3,6 @@
 ## 显示数据库
 ```mysql
 SHOW DATABASES;
-
 ->
 +--------------------+
 | Database           |
@@ -14,20 +13,20 @@ SHOW DATABASES;
 | performance_schema |
 | sys                |
 +--------------------+
+<-
 ```
 
 ## 选择数据库
 ```mysql
 USE crashcourse;
-
 ->
 Database changed
+<-
 ```
 
 ## 显示列表
 ```mysql
 SHOW TABLES;
-
 ->
 +-----------------------+
 | Tables_in_crashcourse |
@@ -39,12 +38,12 @@ SHOW TABLES;
 | products              |
 | vendors               |
 +-----------------------+
+<-
 ```
 
 ## 显示表列
 ```mysql
 SHOW COLUMNS FROM customers;
-
 ->
 +--------------+-----------+------+-----+---------+----------------+
 | Field        | Type      | Null | Key | Default | Extra          |
@@ -59,6 +58,7 @@ SHOW COLUMNS FROM customers;
 | cust_contact | char(50)  | YES  |     | NULL    |                |
 | cust_email   | char(255) | YES  |     | NULL    |                |
 +--------------+-----------+------+-----+---------+----------------+
+<-
 ```
 - Field 字段名
 - Type 数据类型
