@@ -84,3 +84,79 @@ SELECT prod_id, prod_name, prod_price FROM products;
 SELECT * FROM products;
 ```
 
+## 检索不同的行
+```mysql
+SELECT vend_id FROM products;
+->
++---------+
+| vend_id |
++---------+
+|    1001 |
+|    1001 |
+|    1001 |
+|    1002 |
+|    1002 |
+|    1003 |
+|    1003 |
+|    1003 |
+|    1003 |
+|    1003 |
+|    1003 |
+|    1003 |
+|    1005 |
+|    1005 |
++---------+
+<-
+```
+如果要把相同的值去掉，只看有哪些不同的值，可以用
+```mysql
+SELECT DISTINCT vend_id FROM products;
+->
++---------+
+| vend_id |
++---------+
+|    1001 |
+|    1002 |
+|    1003 |
+|    1005 |
++---------+
+<-
+```
+
+## 限制结果
+只返回前五行：
+```mysql
+SELECT prod_name FROM products LIMIT 5;
+->
++--------------+
+| prod_name    |
++--------------+
+| .5 ton anvil |
+| 1 ton anvil  |
+| 2 ton anvil  |
+| Detonator    |
+| Bird seed    |
++--------------+
+<-
+```
+返回从第五行开始的五列：
+```mysql
+SELECT prod_name FROM products LIMIT 5, 5;
+->
++--------------+
+| prod_name    |
++--------------+
+| Carrots      |
+| Fuses        |
+| JetPack 1000 |
+| JetPack 2000 |
+| Oil can      |
++--------------+
+<-
+```
+
+
+
+
+
+
