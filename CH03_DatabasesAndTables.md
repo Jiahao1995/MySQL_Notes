@@ -1,4 +1,4 @@
-# Databases and Tables
+# 数据库和列表
 
 ## 显示数据库
 ```mysql
