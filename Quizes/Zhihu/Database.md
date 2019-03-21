@@ -2,6 +2,8 @@
 -- 创建数据库 school
 CREATE DATABASE school;
 
+USE school;
+
 -- 创建学生表 Student
 CREATE TABLE Student(
 s_id VARCHAR(20),
