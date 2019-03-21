@@ -36,24 +36,24 @@ PRIMARY KEY(s_id,c_id)
 
 -- 插入数据
 -- 插入学生表测试数据
-insert into Student values('01' , '赵雷' , '1990-01-01' , '男');
-insert into Student values('02' , '钱电' , '1990-12-21' , '男');
-insert into Student values('03' , '孙风' , '1990-05-20' , '男');
-insert into Student values('04' , '李云' , '1990-08-06' , '男');
-insert into Student values('05' , '周梅' , '1991-12-01' , '女');
-insert into Student values('06' , '吴兰' , '1992-03-01' , '女');
-insert into Student values('07' , '郑竹' , '1989-07-01' , '女');
-insert into Student values('08' , '王菊' , '1990-01-20' , '女');
+insert into Student values('01' , 'ZhaoLei' , '1990-01-01' , 'M');
+insert into Student values('02' , 'QianDian' , '1990-12-21' , 'M');
+insert into Student values('03' , 'SunFeng' , '1990-05-20' , 'M');
+insert into Student values('04' , 'LiYun' , '1990-08-06' , 'M');
+insert into Student values('05' , 'ZhouMei' , '1991-12-01' , 'F');
+insert into Student values('06' , 'WuLan' , '1992-03-01' , 'F');
+insert into Student values('07' , 'ZhenZhu' , '1989-07-01' , 'F');
+insert into Student values('08' , 'WangJu' , '1990-01-20' , 'F');
 
 -- 课程表测试数据
-insert into Course values('01' , '语文' , '02');
-insert into Course values('02' , '数学' , '01');
-insert into Course values('03' , '英语' , '03');
+insert into Course values('01' , 'Chinese' , '02');
+insert into Course values('02' , 'Math' , '01');
+insert into Course values('03' , 'English' , '03');
 
 -- 教师表测试数据
-insert into Teacher values('01' , '张三');
-insert into Teacher values('02' , '李四');
-insert into Teacher values('03' , '王五');
+insert into Teacher values('01' , 'ZhangSan');
+insert into Teacher values('02' , 'LiSi');
+insert into Teacher values('03' , 'WangWu');
 
 -- 成绩表测试数据
 insert into Score values('01' , '01' , 80);
